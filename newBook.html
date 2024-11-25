@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard Bootstrap</title>
+    <title>Add new book</title>
        <!---Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
        <!---/Bootstrap-->
@@ -49,6 +49,61 @@
      </header>
 
      <main>
+        <div class="container">
+            <div class="d-flex mt-4">
+                <h3>Nuovo Libro</h3>
+            </div>
+            <form class="row g-3 mt-4"> 
+                <div class="col-md-6">
+                  <label for="inputNomeAutore" class="form-label"><span class="text-body-emphasis">Nome Autore</span></label>
+                  <input type="text" class="form-control"  placeholder="Inserisci il nome dell'autore" id="inputNomeAutore">
+                </div>
+                <div class="col-md-6">
+                  <label for="CognomeAutore" class="form-label"><span class="text-body-emphasis">Cognome Autore</span></label>
+                  <input type="text" class="form-control"  placeholder="Inserisci il cognome dell'autore" id="inputCognomeAutore">
+                </div>
+                <div class="col-12">
+                  <label for="inputTitolo" class="form-label"><span class="text-body-emphasis">Titolo</span></label>
+                  <input type="text" class="form-control" id="inputTitolo" placeholder="Inserisci il titolo del libro">
+                  <div class="form-text" id="basic-addon4">Titolo versione Italiana.</div>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputGenere" class="form-label"><span class="text-body-emphasis">Genere</span></label>
+                  <select id="inputGenere" class="form-select">
+                    <option class="text-body-emphasiss" selected>Scegli il genere</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputAnno" class="form-label"> <span class="text-body-emphasis">Anno di Pubblicazione</span></label>
+                    <input type="text" class="form-control" placeholder="Inserisci l'anno" id="inputAnno">
+                  </div>
+                <div class="col-md-4">
+                  <label for="inputISBN#" class="form-label"><span class="text-body-emphasis">ISBN#</span></label>
+                  <input type="text" class="form-control" placeholder="Inserisci l'anno" id="inputISBN#">
+                </div>
+                <hr class="mt-5">
+                <div class="col-12">
+                  <span class="text-body-emphasis">Note</span>
+                    <div class="form-floating mt-2">
+                      
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Comments</label>
+                    </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                      <label class="form-check-label" for="flexSwitchCheckDefault">disponibile anche in digitale</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Aggiuingi un libro</button>
+                </div>
+              </form>
+        </div>
 
      </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
