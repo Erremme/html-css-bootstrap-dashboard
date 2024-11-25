@@ -18,33 +18,34 @@
  </head>
   <body>
      <header>
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid ">
+          <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
               <a class="navbar-brand" href="#"><img class="ms" src="./img/duck.png" alt="logo"></a>
-              <button class="navbar-toggler border-light " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-bars" style="color: #ffffff;"></i></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link link-light active " aria-current="page" href="#">Catalogo Libri</a>
+                    <a class="nav-link activem link-light" aria-current="page" href="#">Catalogo Libri</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item ">
                     <a class="nav-link link-secondary" href="#">Anagrafica Utenti</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item ">
                     <a class="nav-link link-secondary" href="#">Storico Prestiti</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link link-secondary " href="#">Help</a>
+                  <li class="nav-item ">
+                    <a class="nav-link link-secondary">Help</a>
                   </li>
                 </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-secondary" type="submit">Search</button>
+                </form>
               </div>
             </div>
           </nav>
-    
-         
-
      </header>
 
      <main>
@@ -55,7 +56,7 @@
           <div class="row  d-flex">
             
              <div class=" col-12 col-lg-8 d-flex justify-content-between  mt-4">
-               <h1>Catalogo Libri</h1>
+               <h3>Catalogo Libri</h3>
               <button type="button" class="btn btn-primary btn-small ">Aggiungi Libro</button>
              </div>
             <div class="col-12 col-lg-8 mt-4">
@@ -64,14 +65,14 @@
                    <th>Titolo</th>
                    <th class="d-none d-md-table-cell">Data prestito</th>
                    <th>Stato</th>
-                   <th>Azioni</th>
+                   <th class="text-center">Azioni</th>
                 </thead>
                 <tbody>
                   <tr>
                     <td>I pilastri della terra</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                     <td class="d-flex align-items-center">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                         <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -81,7 +82,7 @@
                     <td>I promessi sposi</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -91,7 +92,7 @@
                     <td>Il signore degli anelli</td>
                     <td class="d-none d-md-table-cell">18/10/2023</td>
                     <td><span class="badge text-bg-warning">In prestito</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -101,7 +102,7 @@
                     <td>Harry Potter e la pietra filosofale</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -111,7 +112,7 @@
                     <td>Il codice Da Vinci</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-danger">Non disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -121,7 +122,7 @@
                     <td>Shining</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -132,7 +133,7 @@
                     <td class="d-none d-md-table-cell">21/09/2023</td>
                     <td><span class="badge text-bg-warning">In prestito</span></td>
 
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -142,7 +143,7 @@
                     <td>Il trone di spade</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -152,7 +153,7 @@
                     <td>Il mondo di Sofia</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-danger">Non disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -162,7 +163,7 @@
                     <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
                     <td class="d-none d-md-table-cell">25/07/2023</td>
                     <td><span class="badge text-bg-warning">In prestito</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -172,7 +173,7 @@
                     <td>Il piccolo principe</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
@@ -182,7 +183,7 @@
                     <td>La storia infinita</td>
                     <td class="d-none d-md-table-cell">-</td>
                     <td><span class="badge text-bg-success">Disponibile</span></td>
-                     <td class="d-flex">
+                     <td class="d-flex align-items-center justify-content-center gap-1">
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pencil"></i></button>
                       <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash-can"></i></button>
                     </td>
